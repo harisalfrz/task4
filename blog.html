@@ -1,0 +1,126 @@
+<html>
+    <head>
+    <title>Blog Haris</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;family=Roboto:wght@300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body> 
+
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <a href="index.html"><img src="images/logodw.png" alt="Logo"></a>
+                </li>
+                <li>
+                    <a class="active" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="contact.html">Contact me</a>
+        </div>
+    </nav> 
+
+    <main>
+        <section class="blog-form">
+            <div class="blog-form-container">
+                <h1>Add My Project</h1>
+                <div class="blog-form-input">
+                    <form id="form-blog">
+                        <div class="input-title-div">
+                            <label for="input-title-blog">Title</label>
+                            <input type="text" id="input-title-blog">
+                        </div>
+                        <div class="input-date-div">
+                            <div class="input-startdate-div">
+                                <label for="input-startdate-blog">Start Date</label>
+                                <input type="date" id="input-startdate-blog">
+                            </div>
+                            <div class="input-enddate-div">
+                                <label for="input-enddate-blog">End Date</label>
+                                <input type="date" id="input-enddate-blog">
+                            </div>
+                        </div>
+                        <div class="input-description-div">
+                            <label for="input-description-blog">Description</label>
+                            <textarea name="input-description-blog" id="input-description-blog" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="input-technologies-div">
+                            <h4>Technologies</h4>
+                            <div class="input-technology-div">
+                                <input type="checkbox" id="input-nodejs-blog">
+                                <label for="input-nodejs-blog">NodeJS</label>
+                                <input type="checkbox" id="input-nextjs-blog">
+                                <label for="input-nextjs-blog">NextJS</label>
+                                <input type="checkbox" id="input-reactjs-blog">
+                                <label for="input-reactjs-blog">ReactJS</label>
+                                <input type="checkbox" id="input-typescript-blog">
+                                <label for="input-typescript-blog">TypeScript</label>
+                            </div>
+                        </div>
+                        <div class="input-upload-div">
+                            <label for="input-upload-blog">Upload Image</label>
+                            <input type="file" id="input-upload-blog">
+                        </div>
+                        <div class="btn">
+                            <button class="submit-btn" onclick="addBlog(event)">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <h1>My Project</h1>
+            <div id="blog-content" class="blog-content-container">
+                <div class="blog-content-card">
+                    <div class="card-img">
+                        <img src="images/typescript-icon-512x512-we5ze0xe.png" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2><a href="blog-detail.html">TypeScript</a></h2>
+                        <span>durasi: 1 bulan</span>
+                        <p>TypeScript adalah bahasa pemrograman open source yang dibangun di atas JavaScript..</p>
+                    </div>
+                    <div class="card-techstack">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="card-button">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+                <div class="blog-content-card">
+                    <div class="card-img">
+                        <img src="images/keyboard-mechanical.jpg" alt="">
+                    </div>
+                    <div class="card-text">
+                        <h2><a href="blog-detail2.html">Keyboard Mechanical</a></h2>
+                        <span>durasi: 3 bulan</span>
+                        <p>Keyboard mechanical adalah keyboard yang awet, berkualitas, dan nyaman digunakan sehingga cocok untuk bekerja atau bermain game.</p>
+                    </div>
+                    <div class="card-techstack">
+                        <i class="fa-brands fa-node-js"></i>
+                        <img src="images/nextjs-icon.svg" alt="" style="width: 20px; height: 20px; margin-right: 10px;">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="card-button">
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/blog.js"></script>
+</body>
+</html>
